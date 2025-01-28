@@ -1884,7 +1884,7 @@ MonoBehaviour:
   PullingSettings: {fileID: 11400000, guid: 3acf0379557212e4ba63a5a8341627b8, type: 2}
   RaycastLayermask:
     serializedVersion: 2
-    m_Bits: 5242881
+    m_Bits: 1
   PushoutTime: 0.1
   PullLerpTime: 0.06
   MoveThreshold: 10
