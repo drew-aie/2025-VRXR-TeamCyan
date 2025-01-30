@@ -6,6 +6,8 @@ public class AntBehavior : MonoBehaviour
 {
     [SerializeField]
     private float _health = 100;
+    [SerializeField]
+    private bool _isVariant = false;
 
     public float Health
     { 
