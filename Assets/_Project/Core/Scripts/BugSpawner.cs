@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider))]
+[RequireComponent (typeof(Randomizer))]
 public class BugSpawner : MonoBehaviour
 {
     [SerializeField]
     private GameObject _spawner;
     [SerializeField]
-    private GameObject[] Bugs;
-    [SerializeField]
     private BoxCollider _collider;
+    [SerializeField]
+    private Randomizer _randomizer;
 
     private GameObject _currentBug;
     private bool _isBugSpawned = false;
@@ -18,6 +19,7 @@ public class BugSpawner : MonoBehaviour
 
     private void Start()
     {
+        _currentBug = _randomizer.GetRandom();
         SetCurrentBug();
     }
 
@@ -48,10 +50,10 @@ public class BugSpawner : MonoBehaviour
     {
         GameObject previousBug = _currentBug;
 
-        _currentBug = Bugs[Random.Range(0, Bugs.Length)];
+        _currentBug = _randomizer.GetRandom();
 
         if (previousBug == _currentBug)
-            _currentBug = Bugs[Random.Range(0, Bugs.Length)];
+            _currentBug = _randomizer.GetRandom();
     }
     private void SpawnObjects()
     {

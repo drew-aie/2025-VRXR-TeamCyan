@@ -10,6 +10,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e35b05f572a4a5e449ce2442da42e119,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3098557
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3098557
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3098557
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -61,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e35b05f572a4a5e449ce2442da42e119,
         type: 3}
       propertyPath: m_Name
-      value: SM_EnemyAnt
+      value: EnemyAntBase
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71,6 +86,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3456943557120523688}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1451446286237484893}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7893555419243470439}
   m_SourcePrefab: {fileID: 100100000, guid: e35b05f572a4a5e449ce2442da42e119, type: 3}
 --- !u!137 &132429084796463134 stripped
 SkinnedMeshRenderer:
@@ -349,6 +372,44 @@ LODGroup:
     - renderer: {fileID: 3319866755253432461}
     - renderer: {fileID: 2816686074638630766}
   m_Enabled: 1
+--- !u!114 &1451446286237484893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8696171803540980197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153942881cf5997468f5f24f9572c423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
+  _isVariant: 0
+  _target: {fileID: 0}
+  _agent: {fileID: 7893555419243470439}
+--- !u!195 &7893555419243470439
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8696171803540980197}
+  m_Enabled: 1
+  m_AgentTypeID: -1372625422
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!137 &9085555151465383791 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8469006203940652069, guid: e35b05f572a4a5e449ce2442da42e119,
