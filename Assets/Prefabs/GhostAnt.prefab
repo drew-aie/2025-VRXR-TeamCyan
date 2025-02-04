@@ -171,7 +171,7 @@ PrefabInstance:
     - target: {fileID: 8125807405448900898, guid: 2c99c25eca0fd1c44851fd6debb33b37,
         type: 3}
       propertyPath: m_Name
-      value: SM_EnemyAnt Variant
+      value: GhostAnt
       objectReference: {fileID: 0}
     - target: {fileID: 8538201074769704872, guid: 2c99c25eca0fd1c44851fd6debb33b37,
         type: 3}

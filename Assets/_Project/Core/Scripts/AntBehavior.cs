@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class AntBehavior : MonoBehaviour
 {
     [SerializeField]
     private float _health = 100;
     [SerializeField]
-    private bool _isVariant = false;
-    [SerializeField]
     private GameObject _target;
+    [SerializeField]
+    private NavMeshAgent _agent;
 
     public float Health
     { 
@@ -17,8 +18,8 @@ public class AntBehavior : MonoBehaviour
         set { _health = value; } 
     }
 
-    public bool Variant 
-    { 
-        get { return _isVariant; } 
+    private void Update()
+    {
+        _agent.destination = _target.transform.position;
     }
 }
