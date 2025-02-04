@@ -94,6 +94,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7893555419243470439}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3097636539511584169}
   m_SourcePrefab: {fileID: 100100000, guid: e35b05f572a4a5e449ce2442da42e119, type: 3}
 --- !u!137 &132429084796463134 stripped
 SkinnedMeshRenderer:
@@ -385,7 +389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
-  _isVariant: 0
   _target: {fileID: 0}
   _agent: {fileID: 7893555419243470439}
 --- !u!195 &7893555419243470439
@@ -410,6 +413,27 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &3097636539511584169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8696171803540980197}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &9085555151465383791 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8469006203940652069, guid: e35b05f572a4a5e449ce2442da42e119,

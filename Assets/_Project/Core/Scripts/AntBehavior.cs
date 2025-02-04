@@ -21,6 +21,7 @@ public class AntBehavior : MonoBehaviour
 
     private void Update()
     {
+        if (_health <= 0) { ; }
         _agent.destination = _target.transform.position;
     }
 }

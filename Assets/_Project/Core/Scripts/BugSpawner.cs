@@ -14,13 +14,13 @@ public class BugSpawner : MonoBehaviour
     private Randomizer _randomizer;
 
     private GameObject _currentBug;
-    private bool _isBugSpawned = false;
+    private bool _isBugSpawned;
     private float _timeBeforeSpawn = 3;
 
     private void Start()
     {
+        _isBugSpawned = false;
         _currentBug = _randomizer.GetRandom();
-        SetCurrentBug();
     }
 
     private void Update()
@@ -57,9 +57,17 @@ public class BugSpawner : MonoBehaviour
     }
     private void SpawnObjects()
     {
+        if (_isBugSpawned == true)
+            return;
+
         SetCurrentBug();
 
         Instantiate(_currentBug, transform.position, transform.rotation);
         _isBugSpawned = true;
+    }
+
+    private void DespawnBugs()
+    {
+        _currentBug.SetActive(false);
     }
 }
