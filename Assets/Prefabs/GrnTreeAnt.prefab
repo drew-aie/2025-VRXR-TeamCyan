@@ -116,7 +116,7 @@ PrefabInstance:
     - target: {fileID: 5958060377081177573, guid: a716591fb5a748c4aa6ea9ef4f0df808,
         type: 3}
       propertyPath: m_Name
-      value: SM_EnemyAnt Variant
+      value: GrnTreeAnt
       objectReference: {fileID: 0}
     - target: {fileID: 6059076747469808495, guid: a716591fb5a748c4aa6ea9ef4f0df808,
         type: 3}
