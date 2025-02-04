@@ -3,7 +3,12 @@ guid: fbeabafb296aec6428c4c386467e7eb5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BottleSpray
+    second: {fileID: 2100000, guid: 05dd3a08ceef2fc4cb2abb0b9393c67e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
