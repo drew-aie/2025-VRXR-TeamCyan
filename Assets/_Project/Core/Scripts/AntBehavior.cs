@@ -1,3 +1,4 @@
+using HurricaneVR.Framework.Core.Player;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class AntBehavior : MonoBehaviour
     [SerializeField]
     private float _health = 100;
     [SerializeField]
-    private GameObject _target;
+    private HVRPlayerController _target;
     [SerializeField]
     private NavMeshAgent _agent;
 
