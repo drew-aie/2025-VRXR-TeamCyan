@@ -9,7 +9,7 @@ public class AntBehavior : MonoBehaviour
     [SerializeField]
     private float _health = 100;
     [SerializeField]
-    private HVRPlayerController _target;
+    private GameObject _target;
     [SerializeField]
     private NavMeshAgent _agent;
 
