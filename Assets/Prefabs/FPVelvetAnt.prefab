@@ -41,7 +41,7 @@ PrefabInstance:
     - target: {fileID: 1638532273162814273, guid: 46487e76f8fe6c94e8a9c3f47ade2a4b,
         type: 3}
       propertyPath: m_Name
-      value: SM_EnemyAnt Variant
+      value: FPVelvetAnt
       objectReference: {fileID: 0}
     - target: {fileID: 1833473447449754019, guid: 46487e76f8fe6c94e8a9c3f47ade2a4b,
         type: 3}

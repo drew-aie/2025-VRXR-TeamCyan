@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 8696171803540980197, guid: 1a83800d5c7d42c42a49f487b20e8951,
         type: 3}
       propertyPath: m_Name
-      value: SM_EnemyAnt Variant
+      value: CrazyAnt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
