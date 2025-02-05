@@ -9,9 +9,18 @@ public class AntBehavior : MonoBehaviour
     [SerializeField]
     private float _health = 100;
     [SerializeField]
-    private GameObject _target;
-    [SerializeField]
     private NavMeshAgent _agent;
+    [SerializeField]
+    private GameObject _owner;
+    [SerializeField]
+    private BugSpawner _bugSpawner;
+
+    private GameObject _target;
+
+    private void Start()
+    {
+        _target = GameObject.FindGameObjectWithTag("Player");
+    }
 
     public float Health
     { 
@@ -21,7 +30,7 @@ public class AntBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (_health <= 0) { ; }
+        if (_health <= 0) { _bugSpawner.DespawnBugs(_owner); }
         _agent.destination = _target.transform.position;
     }
 }
