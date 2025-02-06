@@ -3,7 +3,12 @@ guid: 6bb0bafd659c4ce4d81e0fe68423f08c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SprayGun
+    second: {fileID: 2100000, guid: 196e50433535e7d46a13b74ecbafb20a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
