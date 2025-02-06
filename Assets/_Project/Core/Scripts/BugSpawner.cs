@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-[RequireComponent(typeof(BoxCollider))]
 [RequireComponent (typeof(Randomizer))]
 public class BugSpawner : MonoBehaviour
 {
@@ -14,36 +14,22 @@ public class BugSpawner : MonoBehaviour
     private Randomizer _randomizer;
 
     private GameObject _currentBug;
-    private bool _isBugSpawned = false;
     private float _timeBeforeSpawn = 3;
 
     private void Start()
     {
         _currentBug = _randomizer.GetRandom();
-        SetCurrentBug();
     }
 
     private void Update()
     {
-        OnTriggerEnter(_collider);
-        OnTriggerExit(_collider);
+        TimedSpawn();
     }
 
     IEnumerator TimedSpawn()
     {
         yield return new WaitForSeconds(_timeBeforeSpawn);
         SpawnObjects();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        _isBugSpawned = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        _isBugSpawned = false;
-        StartCoroutine(TimedSpawn());
     }
 
     private void SetCurrentBug()
@@ -60,6 +46,10 @@ public class BugSpawner : MonoBehaviour
         SetCurrentBug();
 
         Instantiate(_currentBug, transform.position, transform.rotation);
-        _isBugSpawned = true;
+    }
+
+    public void DespawnBugs(GameObject bug)
+    {
+        bug.SetActive(false);
     }
 }
