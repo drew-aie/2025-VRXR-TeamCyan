@@ -329,7 +329,23 @@ PrefabInstance:
     - target: {fileID: 697792822660838665, guid: beebbda044b117040804ca114a9f581d,
         type: 3}
       propertyPath: m_text
-      value: 1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 697792822660838665, guid: beebbda044b117040804ca114a9f581d,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 697792822660838665, guid: beebbda044b117040804ca114a9f581d,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 697792822660838665, guid: beebbda044b117040804ca114a9f581d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6123932343422818174, guid: beebbda044b117040804ca114a9f581d,
         type: 3}
@@ -380,6 +396,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -61.164
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734951268411422482, guid: beebbda044b117040804ca114a9f581d,
+        type: 3}
+      propertyPath: gameTime
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734951268411422482, guid: beebbda044b117040804ca114a9f581d,
+        type: 3}
+      propertyPath: allowTimer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7734951268411422482, guid: beebbda044b117040804ca114a9f581d,
         type: 3}
@@ -623,6 +649,11 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2992090885434434823, guid: e75f975f7f9983c46879a17897d177e4,
+        type: 3}
+      propertyPath: RaycastLayermask.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7384940931623714712, guid: e75f975f7f9983c46879a17897d177e4,
         type: 3}
       propertyPath: m_Name
@@ -640,12 +671,22 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 85084326}
+    - targetCorrespondingSourceObject: {fileID: 8229850186597450384, guid: e75f975f7f9983c46879a17897d177e4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1728537177}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6624496942157153443, guid: e75f975f7f9983c46879a17897d177e4,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 774612422}
   m_SourcePrefab: {fileID: 100100000, guid: e75f975f7f9983c46879a17897d177e4, type: 3}
+--- !u!4 &369618454 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8229850186597450384, guid: e75f975f7f9983c46879a17897d177e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 369618453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &743619965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1319,6 +1360,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8273331295841723925, guid: e75f975f7f9983c46879a17897d177e4,
     type: 3}
   m_PrefabInstance: {fileID: 369618453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1728537176
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 369618454}
+    m_Modifications:
+    - target: {fileID: 505059858484733602, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_Name
+      value: Timer 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.000000003725291
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.031999886
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.088499956
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.030073047
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.03154987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.68931025
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.72315395
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 990f7e2487b25fd4485160225680425e, type: 3}
+--- !u!4 &1728537177 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1728537176}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2098981038
 GameObject:
