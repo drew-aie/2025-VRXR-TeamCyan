@@ -385,7 +385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
-  _isVariant: 0
   _target: {fileID: 0}
   _agent: {fileID: 7893555419243470439}
 --- !u!195 &7893555419243470439
