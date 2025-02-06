@@ -16,6 +16,7 @@ public class AntBehavior : MonoBehaviour
     private BugSpawner _bugSpawner;
 
     private GameObject _target;
+    private float _killCount;
 
     private void Start()
     {
@@ -28,9 +29,18 @@ public class AntBehavior : MonoBehaviour
         set { _health = value; } 
     }
 
+    public float Extermination
+    {
+        get { return _killCount; }
+    }
+
     private void Update()
     {
-        if (_health <= 0) { _bugSpawner.DespawnBugs(_owner); }
+        if (_health <= 0) 
+        {
+            _bugSpawner.DespawnBugs(_owner);
+            _killCount++; 
+        }
         _agent.destination = _target.transform.position;
     }
 }
