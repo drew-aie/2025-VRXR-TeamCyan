@@ -11,7 +11,8 @@ public class GameTimerManager : MonoBehaviour
     [SerializeField] private float gameTime;
     [SerializeField] private TextMeshProUGUI timeTextBox;
     public bool allowTimer;
-
+    [SerializeField]
+    private BugSpawner Spawner;
     private enum GameState
     {
         Waiting,
@@ -32,6 +33,7 @@ public class GameTimerManager : MonoBehaviour
 
     void Start()
     {
+        Spawner.PauseSpawn = true;
         allowTimer = true;
         gamestate = GameState.Playing;
     }
@@ -46,6 +48,9 @@ public class GameTimerManager : MonoBehaviour
 
         if (gamestate == GameState.Playing)
             CheckTime();
+        else if (gamestate == GameState.End)
+            Spawner.PauseSpawn = true;
+
     }
 
     private void UpdateGameTimer()
@@ -63,6 +68,7 @@ public class GameTimerManager : MonoBehaviour
     {
         if (gameTime <= 0)
         {
+            Spawner.PauseSpawn = true;
             allowTimer = false;
             timeTextBox.text = "Game Over!";
             onTimerExpire.Invoke();
@@ -86,7 +92,7 @@ public class GameTimerManager : MonoBehaviour
         if (playerTransform != null)
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(playerTransform.position, npcCheckRadius);
+            Gizmos.DrawSphere(playerTransform.position, npcCheckRadius);
         }
     }
 }
