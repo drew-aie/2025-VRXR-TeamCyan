@@ -6897,7 +6897,20 @@ MonoBehaviour:
   DisableCollision: 1
   SpawnedPrefab:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3131271999300463768, guid: 29edd39c4f61183438687259034da2ab,
+          type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   DebugScale: 0
 --- !u!114 &3374431718426742947
 MonoBehaviour:
