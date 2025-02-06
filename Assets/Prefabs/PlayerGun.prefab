@@ -160,7 +160,7 @@ Transform:
   m_GameObject: {fileID: 4069661906765635637}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.069, y: 0.043, z: 0}
+  m_LocalPosition: {x: 0.188, y: 0.066, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -277,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 5408715466326718530}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.225, y: 0.048, z: 0}
+  m_LocalPosition: {x: -0.168, y: 0.021, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -475,6 +475,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SprayGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606458276439489098, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3061337
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606458276439489098, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4585199
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606458276439489098, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4585199
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606458276439489098, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.169
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606458276439489098, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599393665818084366, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.943604
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599393665818084366, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.97000736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599393665818084366, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1237
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599393665818084366, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18388
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599393665818084366, guid: 316a853f019445a4ca2b034bdb764855,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.069083
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
