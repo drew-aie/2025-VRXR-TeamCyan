@@ -15,6 +15,7 @@ public class BugSpawner : MonoBehaviour
 
     private GameObject _currentBug;
     private float _timeBeforeSpawn = 3;
+    private bool _pauseSpawn = false;
 
     private void Start()
     {
@@ -23,7 +24,14 @@ public class BugSpawner : MonoBehaviour
 
     private void Update()
     {
-        TimedSpawn();
+        if (_pauseSpawn == false)
+            TimedSpawn();
+    }
+
+    public bool PauseSpawn
+    {
+        get { return _pauseSpawn; }
+        set { _pauseSpawn = value; }
     }
 
     IEnumerator TimedSpawn()
