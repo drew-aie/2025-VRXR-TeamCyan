@@ -10,7 +10,7 @@ public class GameTimerManager : MonoBehaviour
     [Header("Timer Components")]
     [SerializeField] private float gameTime;
     [SerializeField] private TextMeshProUGUI timeTextBox;
-    private bool allowTimer;
+    public bool allowTimer;
 
     private enum GameState
     {
@@ -21,7 +21,6 @@ public class GameTimerManager : MonoBehaviour
     }
 
     private GameState gamestate;
-
     [Header("Timer Events")]
     public UnityEvent onTimerExpire;
 
