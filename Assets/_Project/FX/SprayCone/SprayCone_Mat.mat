@@ -122,9 +122,9 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Direction: {r: 0, g: -1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _NoiseColor: {r: 0.9141455, g: 0.990566, b: 0.83637416, a: 1}
+    - _NoiseColor: {r: 0.9174528, g: 1, b: 0.8349056, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SprayColor: {r: 0.75456727, g: 1, b: 0.2971698, a: 1}
+    - _SprayColor: {r: 0.64248705, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &7196638864319470865
 MonoBehaviour:
