@@ -427,6 +427,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1109332987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1109332989}
+  - component: {fileID: 1109332988}
+  m_Layer: 0
+  m_Name: PoserSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1109332988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109332987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d1b667b6234620a01e126539c3f6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftHandPreview: {fileID: 0}
+  RightHandPreview: {fileID: 0}
+  BodyPreview: {fileID: 0}
+  PreviewLeft: 0
+  PreviewRight: 0
+  LeftAutoPose: 0
+  RightAutoPose: 0
+  SelectionIndex: 0
+  PoseNames:
+  - 'Primary: ClosedPose'
+  PrimaryPose:
+    Pose: {fileID: 11400000, guid: 1187c7a698ef77d42ae62cf2a1cdac88, type: 2}
+    Weight: 1
+    Mask: 0
+    Type: 0
+    Speed: 16
+    AnimationParameter: None
+    ButtonParameter: 0
+    Button: 0
+    Disabled: 0
+    ThumbType: 0
+    IndexType: 0
+    MiddleType: 0
+    RingType: 0
+    PinkyType: 0
+    ThumbStart: 0.75
+    IndexStart: 1
+    MiddleStart: 0
+    RingStart: 0
+    PinkyStart: 0
+  Blends: []
+  MirrorAxis: 0
+--- !u!4 &1109332989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109332987}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143067353
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player_XRRig (BackUp)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384940931623714712, guid: e75f975f7f9983c46879a17897d177e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1742,6 +1823,21 @@ PrefabInstance:
       propertyPath: _fingers.Array.data[4].Bones.Array.data[2].OtherForward.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6024974719373978365, guid: a105b4b9f8bc724478fb6ca08106796b,
+        type: 3}
+      propertyPath: PoseNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024974719373978365, guid: a105b4b9f8bc724478fb6ca08106796b,
+        type: 3}
+      propertyPath: PoseNames.Array.data[0]
+      value: 'Primary: ClosePose(Clone)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024974719373978365, guid: a105b4b9f8bc724478fb6ca08106796b,
+        type: 3}
+      propertyPath: PoseNames.Array.data[1]
+      value: ClosedPose
+      objectReference: {fileID: 0}
     - target: {fileID: 8599329228592087766, guid: a105b4b9f8bc724478fb6ca08106796b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2716,21 +2812,6 @@ PrefabInstance:
       propertyPath: _fingers.Array.data[4].Bones.Array.data[2].OtherForward.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3160092057315369281, guid: 50fbd307b88d2e341bbedf1455c67fe6,
-        type: 3}
-      propertyPath: PoseNames.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3160092057315369281, guid: 50fbd307b88d2e341bbedf1455c67fe6,
-        type: 3}
-      propertyPath: PoseNames.Array.data[0]
-      value: Primary Not Set
-      objectReference: {fileID: 0}
-    - target: {fileID: 3160092057315369281, guid: 50fbd307b88d2e341bbedf1455c67fe6,
-        type: 3}
-      propertyPath: PrimaryPose.AnimationParameter
-      value: None
-      objectReference: {fileID: 0}
     - target: {fileID: 3544838399993285702, guid: 50fbd307b88d2e341bbedf1455c67fe6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2807,3 +2888,4 @@ SceneRoots:
   - {fileID: 1490256268}
   - {fileID: 1710636946}
   - {fileID: 1143067354}
+  - {fileID: 1109332989}

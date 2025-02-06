@@ -662,8 +662,8 @@ MonoBehaviour:
   SphereRadius: 0.008
   FingerTipOnly: 0
   Hand: {fileID: 5082411559702629946}
-  OpenPose: {fileID: 0}
-  ClosedPose: {fileID: 0}
+  OpenPose: {fileID: 11400000, guid: f67e0ea5c9f720540ac5c1aabe39e8b3, type: 2}
+  ClosedPose: {fileID: 11400000, guid: 1187c7a698ef77d42ae62cf2a1cdac88, type: 2}
   Palm: {fileID: 6036186312594470316}
   DrawSpheres: 0
   DrawTips: 0
@@ -698,9 +698,10 @@ MonoBehaviour:
   RightAutoPose: 0
   SelectionIndex: 0
   PoseNames:
-  - Primary Not Set
+  - 'Primary: ClosePose(Clone)'
+  - ClosedPose
   PrimaryPose:
-    Pose: {fileID: 0}
+    Pose: {fileID: 11400000, guid: c43705409efc4154897a39ba548bcbd8, type: 2}
     Weight: 1
     Mask: 0
     Type: 0
@@ -719,7 +720,26 @@ MonoBehaviour:
     MiddleStart: 0
     RingStart: 0
     PinkyStart: 0
-  Blends: []
+  Blends:
+  - Pose: {fileID: 11400000, guid: 1187c7a698ef77d42ae62cf2a1cdac88, type: 2}
+    Weight: 1
+    Mask: 0
+    Type: 0
+    Speed: 16
+    AnimationParameter: 
+    ButtonParameter: 0
+    Button: 0
+    Disabled: 0
+    ThumbType: 1
+    IndexType: 1
+    MiddleType: 1
+    RingType: 1
+    PinkyType: 1
+    ThumbStart: 0
+    IndexStart: 0
+    MiddleStart: 0
+    RingStart: 0
+    PinkyStart: 0
   MirrorAxis: 0
 --- !u!114 &3411378711761520903
 MonoBehaviour:
