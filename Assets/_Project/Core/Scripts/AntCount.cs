@@ -15,6 +15,6 @@ public class AntCount : MonoBehaviour
 
     private void Update()
     {
-        AntCountTextBox.text = "Ants Exterminated!" + Behavior.Extermination.ToString();
+        AntCountTextBox.text = "Ants Exterminated: " + "\n" + Behavior.Extermination.ToString();
     }
 }
