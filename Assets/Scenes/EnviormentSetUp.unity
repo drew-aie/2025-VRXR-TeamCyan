@@ -269,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b15244e4bbffac4a9ca28c65c56280b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -709,6 +709,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1848065615098180358, guid: 29edd39c4f61183438687259034da2ab,
     type: 3}
   m_PrefabInstance: {fileID: 867839975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &483081507 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1929061217532122237, guid: e75f975f7f9983c46879a17897d177e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1882081757}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &597175017
 PrefabInstance:
@@ -2152,6 +2158,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 111.92
       objectReference: {fileID: 0}
+    - target: {fileID: 7734951268411422482, guid: beebbda044b117040804ca114a9f581d,
+        type: 3}
+      propertyPath: Spawner
+      value: 
+      objectReference: {fileID: 909725807646126461, guid: ab357edc1e569b443892b025de2c1801,
+        type: 3}
+    - target: {fileID: 7734951268411422482, guid: beebbda044b117040804ca114a9f581d,
+        type: 3}
+      propertyPath: allowTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734951268411422482, guid: beebbda044b117040804ca114a9f581d,
+        type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 483081507}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2163,6 +2185,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2024478278}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024478280 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7734951268411422482, guid: beebbda044b117040804ca114a9f581d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2024478278}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909f39314890a7149a0dc75e5c902d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2098981038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,6 +2328,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Timer 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5065834672584739902, guid: 990f7e2487b25fd4485160225680425e,
+        type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 2024478280}
     - target: {fileID: 6123932343422818174, guid: 990f7e2487b25fd4485160225680425e,
         type: 3}
       propertyPath: m_LocalPosition.x
