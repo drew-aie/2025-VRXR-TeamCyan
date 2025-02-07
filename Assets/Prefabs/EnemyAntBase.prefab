@@ -343,7 +343,7 @@ LODGroup:
     - renderer: {fileID: 4488894526324685938}
     - renderer: {fileID: 4887073088705256143}
     - renderer: {fileID: 8405394702961908494}
-  - screenRelativeHeight: 0.3
+  - screenRelativeHeight: 0.12501676
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6599483566804642877}
@@ -357,7 +357,7 @@ LODGroup:
     - renderer: {fileID: 5640706494947298336}
     - renderer: {fileID: 7963886516017011331}
     - renderer: {fileID: 3571150724917445338}
-  - screenRelativeHeight: 0.1
+  - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 1835834634356103233}
@@ -385,8 +385,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
-  _target: {fileID: 0}
   _agent: {fileID: 7893555419243470439}
+  _owner: {fileID: 8696171803540980197}
+  _bugSpawner: {fileID: 909725807646126461, guid: ab357edc1e569b443892b025de2c1801,
+    type: 3}
 --- !u!195 &7893555419243470439
 NavMeshAgent:
   m_ObjectHideFlags: 0
