@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyAntBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d207159a9552181498d2c782b13efc30, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -385,8 +390,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
-  _target: {fileID: 0}
   _agent: {fileID: 7893555419243470439}
+  _owner: {fileID: 0}
+  _bugSpawner: {fileID: 0}
 --- !u!195 &7893555419243470439
 NavMeshAgent:
   m_ObjectHideFlags: 0
