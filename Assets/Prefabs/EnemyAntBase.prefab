@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyAntBase
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7e673888ab9573a4b904e09408f32f6b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
