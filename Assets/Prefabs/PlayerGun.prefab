@@ -186,7 +186,7 @@ MonoBehaviour:
   CheckDistance: 0
   MaxDistance: 0.3
   LeftHand: 1
-  RightHand: 1
+  RightHand: 0
   Group: -1
   HandRotationOffset: {x: 0, y: 0, z: 0}
   HandPositionOffset: {x: 0, y: 0, z: 0}
@@ -302,7 +302,7 @@ MonoBehaviour:
   AllowedAngleDifference: 360
   CheckDistance: 0
   MaxDistance: 0.3
-  LeftHand: 1
+  LeftHand: 0
   RightHand: 1
   Group: -1
   HandRotationOffset: {x: 0, y: 0, z: 0}
