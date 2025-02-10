@@ -13,8 +13,19 @@ public class AntCount : MonoBehaviour
     [SerializeField]
     private AntBehavior Behavior;
 
+    [SerializeField]
+    private GameTimerManager Manager;
+
     private void Update()
     {
-        AntCountTextBox.text = "Ants Exterminated: " + "\n" + Behavior.Extermination.ToString();
+        if (Manager.allowTimer == false)
+        {
+            AntCountTextBox.text = "Game Over" + "\n" + "Total: " + "\n" + Behavior.Extermination.ToString();
+
+        }
+        else
+        {
+            AntCountTextBox.text = "Ants Exterminated: " + "\n" + Behavior.Extermination.ToString();
+        }
     }
 }

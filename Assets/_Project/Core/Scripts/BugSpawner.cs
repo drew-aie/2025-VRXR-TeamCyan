@@ -14,18 +14,20 @@ public class BugSpawner : MonoBehaviour
     private Randomizer _randomizer;
 
     private GameObject _currentBug;
-    private float _timeBeforeSpawn = 3;
+    private float _timeBeforeSpawn = 1.5f;
     private bool _pauseSpawn = false;
+    private Coroutine _coroutine;
 
     private void Start()
     {
         _currentBug = _randomizer.GetRandom();
+        _coroutine = StartCoroutine(TimedSpawn());
     }
 
     private void Update()
     {
-        if (_pauseSpawn == false)
-            TimedSpawn();
+        if (_pauseSpawn == true)
+            StopCoroutine(_coroutine);
     }
 
     public bool PauseSpawn
