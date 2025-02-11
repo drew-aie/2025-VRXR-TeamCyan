@@ -182,6 +182,7 @@ MonoBehaviour:
   AntCountTextBox: {fileID: 697792822660838665}
   Behavior: {fileID: 1451446286237484893, guid: 1a83800d5c7d42c42a49f487b20e8951,
     type: 3}
+  Manager: {fileID: 0}
 --- !u!1 &2523129283506219459
 GameObject:
   m_ObjectHideFlags: 0
