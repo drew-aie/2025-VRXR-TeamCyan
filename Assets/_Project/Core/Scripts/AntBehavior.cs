@@ -34,6 +34,12 @@ public class AntBehavior : MonoBehaviour
         get { return _killCount; }
     }
 
+    public GameObject Target
+    {
+        get { return _target; }
+        set { _target = value; }
+    }
+
     private void Update()
     {
         if (_health <= 0) 
