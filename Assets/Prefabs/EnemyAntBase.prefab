@@ -313,6 +313,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e35b05f572a4a5e449ce2442da42e119,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ants
+      objectReference: {fileID: 0}
     - target: {fileID: 1245673920769976218, guid: e35b05f572a4a5e449ce2442da42e119,
         type: 3}
       propertyPath: m_Layer
